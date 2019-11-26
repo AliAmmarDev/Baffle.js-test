@@ -29,9 +29,17 @@
 
   <body>
     <div class="container">
-      <p>Read-only Friday</p>
+      <p class="baffle">Read-only Friday</p>
     </div>
-
+    <script>
+      const text = baffle('.baffle');
+      text.set({
+        characters: '!/|~#.^-=_+*$#%nwf',
+        speed: 80
+      });
+      text.start();
+      text.reveal(1500);
+    </script>
   </body>
 
 </html>
